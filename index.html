@@ -9,12 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!--
-  EDITING NOTES
-  - Put resume.pdf and paper.pdf in the same folder as this file so the buttons work.
-  - To host free: drag the folder into Netlify Drop, or use GitHub Pages.
--->
-
 <style>
   :root {
     --ink: #16233B; --paper: #F5F7F6; --surface: #FFFFFF;
@@ -129,19 +123,15 @@
   .paper .meta { font-family: var(--sans); font-size: .92rem; color: var(--muted); margin-bottom: 1rem; }
   .paper p { font-size: 1.05rem; }
   .outcomes h4 { font-family: var(--sans); font-size: .95rem; font-weight: 600; margin: 0 0 .75rem; }
-  .read { display: inline-block; font-family: var(--sans); font-weight: 600; text-decoration: none; background: var(--scrub); color: var(--paper); padding: .7rem 1.2rem; border-radius: 8px; }
-  .read:hover { filter: brightness(1.1); }
 
   .findings { margin: 0 0 1.5rem; display: grid; gap: 1rem; }
   .findings div { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; align-items: baseline; border-top: 1px solid var(--line); padding-top: .9rem; }
   .findings dt { font-family: var(--sans); font-weight: 600; font-size: 1.35rem; color: var(--scrub); line-height: 1.1; }
   .findings dd { margin: 0; font-size: .98rem; line-height: 1.5; }
-  .paper-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
   .sources { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 1rem; font-family: var(--sans); }
   .sources summary { cursor: pointer; font-weight: 600; color: var(--scrub); }
   .sources ul { margin: 1rem 0 0; padding-left: 1.1rem; font-size: .92rem; line-height: 1.55; color: var(--muted); }
   .sources li { margin-bottom: .5rem; }
-
   .skills { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
   .skills ul { margin: 0; padding-left: 1.1rem; font-size: 1.02rem; }
   .skills li { margin-bottom: .35rem; }
@@ -154,27 +144,13 @@
   .horizon .when { margin-bottom: .5rem; }
   .horizon p { font-size: 1.02rem; margin: .5rem 0 0; }
 
-  .contact { background: var(--scrub); color: #fff; border-top: 0; }
-  .contact h2 { color: #fff; }
-  .contact p { color: rgba(255,255,255,.9); max-width: 34rem; }
-  .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
-  .btn { font-family: var(--sans); font-weight: 600; font-size: 1rem; text-decoration: none; padding: .8rem 1.3rem; border-radius: 8px; border: 2px solid #fff; color: #fff; }
-  .btn.solid { background: #fff; color: #1F5E5B; }
-  .btn:hover { background: rgba(255,255,255,.12); }
-  .btn.solid:hover { background: #EAF2EF; }
-  .contact :focus-visible { outline-color: #fff; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact { background: #173E3C; } }
-  :root[data-theme="dark"] .contact { background: #173E3C; }
-
   footer { padding: 2rem 0; font-family: var(--sans); font-size: .9rem; color: var(--muted); }
 
   @media print {
-    header.bar, .ekg, .actions, .read { display: none; }
+    header.bar, .ekg { display: none; }
     body { background: #fff; color: #000; font-size: 11pt; }
     section { padding: 1.2rem 0; }
     .exp article, .paper { break-inside: avoid; }
-    .contact { background: none; color: #000; }
-    .contact h2, .contact p { color: #000; }
   }
 </style>
 </head>
@@ -188,8 +164,7 @@
       <a href="#clinical">Clinical</a>
       <a href="#research" class="keep">Research</a>
       <a href="#leadership">Leadership</a>
-      <a href="#future">Future</a>
-      <a href="#contact" class="keep">Contact</a>
+      <a href="#future" class="keep">Future</a>
     </nav>
   </div>
 </header>
@@ -199,7 +174,7 @@
   <!-- HERO -->
   <div class="hero wrap">
     <h1>Ciara Schulmann, future family nurse practitioner.</h1>
-    <p class="lede">A first-generation Health Science student at the University of Miami preparing to lead holistic, patient-centered care in endocrinology and metabolic health, for patients from pediatrics to geriatrics.</p>
+    <p class="lede">A Health Science student at the University of Miami preparing for a career in advanced practice nursing, with a focus on hormonal and metabolic health.</p>
     <ul class="programs" aria-label="Programs I'm applying to">
       <li>Master's Direct Entry</li>
       <li>Accelerated BSN</li>
@@ -225,8 +200,8 @@
       </div>
       <div class="prose">
         <blockquote>I want to give patients the time and understanding to take charge of their own health.</blockquote>
-        <p>A personal health experience showed me how much it matters when a patient is taught to understand her own body. Since then, I've been drawn to holistic, patient-centered care, especially in endocrinology and metabolic health.</p>
-        <p>Nursing lets me build real relationships with patients. As a family nurse practitioner with a DNP, I'll be able to diagnose, treat, and care for people across the lifespan, and help improve care beyond a single exam room.</p>
+        <p>A personal health experience showed me how much it matters when a patient is taught to understand her own body. It's why I'm drawn to care that looks at the whole person, especially in hormonal and metabolic health.</p>
+        <p>Nursing lets me build real relationships with patients. Becoming a family nurse practitioner is how I plan to turn that into a career.</p>
       </div>
     </div>
   </section>
@@ -281,7 +256,7 @@
       <div class="exp">
         <article>
           <h3>Medical Assistant</h3>
-          <div class="meta">Plastic Surgery Center of New Jersey, Maywood, NJ<br>Under Frank Ciminello, MD · May 2025 – August 2026</div>
+          <div class="meta">Plastic Surgery Center of New Jersey<br>May 2025 – August 2026</div>
           <ul>
             <li>Collected vitals and medical histories for 30–40 patients a week to brief the physician before appointments.</li>
             <li>Assisted during evaluations and kept exam rooms sterile and stocked.</li>
@@ -290,7 +265,7 @@
         </article>
         <article>
           <h3>Volunteer, Cardiology Step-Down Unit</h3>
-          <div class="meta">Hackensack University Medical Center, Hackensack, NJ<br>July 2025 – present</div>
+          <div class="meta">Hackensack University Medical Center<br>July 2025 – present</div>
           <ul>
             <li>Greeted and assisted adult cardiac patients and visitors.</li>
             <li>Completed equipment checks and restocked supplies to keep the unit ready.</li>
@@ -299,7 +274,7 @@
         </article>
         <article>
           <h3>Clinical Shadowing, Oncology and Lymphoma</h3>
-          <div class="meta">Hackensack University Medical Center, Hackensack, NJ<br>Under Christina Carosella, RN · August 2025</div>
+          <div class="meta">Hackensack University Medical Center<br>August 2025</div>
           <ul>
             <li>Observed chemotherapy preparation and administration, including doxorubicin safety protocols.</li>
             <li>Helped position and steady a patient during intrathecal chemotherapy by lumbar puncture.</li>
@@ -308,7 +283,7 @@
         </article>
         <article>
           <h3>Clinical Shadowing, Functional Medicine</h3>
-          <div class="meta">The Functional Medicine Center of New Jersey, Saddle River, NJ<br>Under Nicole Anderson, MD, APNs, and RNs · June – August 2025</div>
+          <div class="meta">The Functional Medicine Center of New Jersey<br>June – August 2025</div>
           <ul>
             <li>Assisted with hyperbaric oxygen therapy setup and pre- and post-treatment safety checks.</li>
             <li>Learned IV micronutrient infusion setup and patient flow under clinician supervision.</li>
@@ -317,7 +292,7 @@
         </article>
         <article>
           <h3>Clinical Shadowing, Spine Care</h3>
-          <div class="meta">University Spine Center, Wayne, NJ<br>Under Kassandra Kayal, APN · August 2025</div>
+          <div class="meta">University Spine Center<br>August 2025</div>
           <ul>
             <li>Observed pre- and postoperative evaluations for disc herniations and fractures.</li>
             <li>Saw how an APRN and spine surgeon collaborate on surgical decisions and patient education.</li>
@@ -325,7 +300,7 @@
         </article>
         <article>
           <h3>Clinical Shadowing, Epilepsy</h3>
-          <div class="meta">Northeast Regional Epilepsy Group, Hackensack, NJ<br>Under Shannon Brophy, APN-BC · July 2025</div>
+          <div class="meta">Northeast Regional Epilepsy Group<br>July 2025</div>
           <ul>
             <li>Observed follow-ups across tonic-clonic, absence, myoclonic, atonic, and focal aware seizures.</li>
             <li>Reviewed cases with genetic causes such as tuberous sclerosis, and triggers like stress and poor sleep.</li>
@@ -333,7 +308,7 @@
         </article>
         <article>
           <h3>Volunteer, Physical Therapy</h3>
-          <div class="meta">Franklin Lakes Sport and Spine, Franklin Lakes, NJ<br>Under Anthony Manzella, DPT · May 2024 – July 2025</div>
+          <div class="meta">Franklin Lakes Sport and Spine<br>May 2024 – July 2025</div>
           <ul>
             <li>Guided children and adults to treatment stations and ensured safe transfers in a high-volume clinic.</li>
             <li>Prepared equipment to cut therapist setup time, and relayed patient comfort and needs to PTs.</li>
@@ -350,10 +325,10 @@
       <article class="paper">
         <div>
           <h3>The impact of nurse-patient ratios on patient outcomes in hospital settings</h3>
-          <div class="meta">University of Miami, WRS 230 Advanced Professional Communication (Honors) · Professor Claudia Hoffmann · December 2025</div>
+          <div class="meta">University of Miami, WRS 230 Advanced Professional Communication (Honors) · December 2025</div>
           <p>Nurses are the clinicians who watch patients most closely, and many life-threatening problems begin with subtle signs. My report asks what happens to patients when each nurse is responsible for too many of them. I synthesized nine peer-reviewed U.S. studies and one news report covering mortality, medication errors, falls, infections, surgical complications, patient satisfaction, and hospital costs, with a closer look at high-acuity ICUs and post-surgical units.</p>
           <p>The evidence points in one direction: understaffing drives a cycle of heavier workloads, burnout, and turnover that worsens the shortage and puts patients at risk. It also costs hospitals more, not less. California's Assembly Bill 394, in effect since 2004 and still the only statewide ratio mandate, shows that setting limits improves outcomes without the financial harm hospitals feared.</p>
-          <p>Writing this paper shaped how I think about advanced practice. Safe care depends not only on individual clinicians, but on the systems and policies around them, which is exactly the systems-level work a DNP prepares nurses to lead.</p>
+          <p>Writing this paper shaped how I think about advanced practice. Safe care depends not only on individual clinicians, but on the systems and policies around them, and that is part of the work I hope to do.</p>
         </div>
         <div class="outcomes">
           <h4>Key findings from the evidence</h4>
@@ -364,9 +339,6 @@
             <div><dt>48%</dt><dd>more failure-to-rescue events in understaffed surgical oncology units (Friese et al., 2008)</dd></div>
             <div><dt>10–14%</dt><dd>potential drop in mortality if other states adopted California-style ratios (Aiken et al., 2010)</dd></div>
           </dl>
-          <div class="paper-actions">
-            <a class="read" href="paper.pdf" target="_blank" rel="noopener">Read the full paper (PDF)</a>
-          </div>
         </div>
         <details class="sources">
           <summary>Sources cited (10)</summary>
@@ -412,7 +384,7 @@
         </article>
         <article>
           <h3>Volunteer and Event Coordinator, Swing for the Stars</h3>
-          <div class="meta">Tiger Schulmann's Mixed Martial Arts, Elmwood Park, NJ · March 2023 – present</div>
+          <div class="meta">Tiger Schulmann's Mixed Martial Arts · March 2023 – present</div>
           <ul>
             <li>Run an annual charity event where children with special needs become "pro fighters" alongside professional and UFC fighters.</li>
             <li>Teach martial arts, discipline, and confidence to students with special needs.</li>
@@ -420,7 +392,7 @@
         </article>
         <article>
           <h3>Human Resources Intern</h3>
-          <div class="meta">Ralph Lauren, Nutley, NJ · June – August 2024</div>
+          <div class="meta">Ralph Lauren · June – August 2024</div>
           <ul>
             <li>Created a company-wide organizational chart covering 23,000 employees.</li>
             <li>Designed an employee engagement game that my manager adopted for the Internship Training Program.</li>
@@ -459,7 +431,6 @@
           <h3>Organizations</h3>
           <ul>
             <li>Nursing Student Association</li>
-            <li>First Generation Canes</li>
             <li>Sigma Delta Tau (philanthropy: child abuse prevention)</li>
             <li>UM Intramural Soccer, Captain</li>
           </ul>
@@ -481,35 +452,23 @@
   <section id="future">
     <div class="wrap">
       <h2>Where I'm going</h2>
-      <p class="intro">From the bedside to my own practice, and then to shaping how care is delivered.</p>
+      <p class="intro">The steps ahead, one at a time.</p>
       <div class="horizon">
         <div>
           <div class="when">Nursing school</div>
           <h3>Build a strong clinical foundation</h3>
-          <p>Learn at the bedside across the lifespan, from pediatrics to geriatrics, and grow the assessment skills every advanced practice nurse depends on.</p>
+          <p>Learn at the bedside with patients of all ages, and grow the assessment skills every advanced practice nurse depends on.</p>
         </div>
         <div>
           <div class="when">DNP, Family Nurse Practitioner</div>
           <h3>Diagnose, treat, and lead</h3>
-          <p>Gain the authority to diagnose, order labs, and prescribe, with doctoral training in population health, evidence-based practice, and health policy.</p>
+          <p>Train to work as a primary care provider for whole families, with doctoral coursework that looks beyond the individual patient.</p>
         </div>
         <div>
           <div class="when">Long term</div>
           <h3>My own practice, and the next generation</h3>
-          <p>Open a practice dedicated to endocrinology and metabolic health, then teach, mentor nurses, and take on leadership roles that improve care across a health system.</p>
+          <p>Build a practice centered on hormonal and metabolic health, and help guide the nurses who come next.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <h2>Let's talk</h2>
-      <p>Thank you for learning about my path. I'd welcome the chance to share more about what I hope to bring to your program.</p>
-      <div class="actions">
-        <a class="btn solid" href="mailto:ciararschulmann@gmail.com">Email me</a>
-        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View my résumé (PDF)</a>
       </div>
     </div>
   </section>
@@ -517,7 +476,7 @@
 </main>
 
 <footer>
-  <div class="wrap">© <span id="yr">2026</span> Ciara Schulmann · Coral Gables, FL</div>
+  <div class="wrap">© <span id="yr">2026</span> Ciara Schulmann</div>
 </footer>
 
 <script>
